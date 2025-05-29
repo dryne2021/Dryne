@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dryne Tutoring</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Additional styles for testimonial submission */
+    #submit-testimonial {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+      text-align: center;
+    }
+    #submit-testimonial h2 {
+      color: #0052cc;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+    }
+    #submit-testimonial form {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    #submit-testimonial label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    #submit-testimonial input,
+    #submit-testimonial select,
+    #submit-testimonial textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: 2px solid #0052cc;
+      border-radius: 8px;
+      font-size: 1rem;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+    #submit-testimonial input:focus,
+    #submit-testimonial select:focus,
+    #submit-testimonial textarea:focus {
+      border-color: #ff7f50;
+      outline: none;
+    }
+    #submit-testimonial button {
+      background-color: #ff7f50;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+    #submit-testimonial button:hover {
+      background-color: #e6733c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Dryne Tutoring</h1>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#submit-testimonial">Submit Testimonial</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <h2>Your Trusted Online Tutor</h2>
+      <p>Helping students excel through personalized tutoring and assignment assistance.</p>
+      <a href="#contact" class="btn-primary">Book a Session</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Dryne Tutoring</h2>
+      <p>
+        Dryne Tutoring is dedicated to empowering students and professionals through personalized, high-quality educational support and career services. With years of experience in academic tutoring, assignment assistance, and career coaching, Dryne provides tailored solutions that help clients succeed in their studies and professional lives.
+      </p>
+      <p>
+        Whether you need help mastering challenging subjects, preparing for exams, crafting an impressive resume, or navigating your career path, Dryne Tutoring offers comprehensive services designed to meet your unique goals. We pride ourselves on our commitment to excellence, personalized approach, and passion for helping clients achieve their full potential.
+      </p>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="service-cards">
+        <article class="service-card" data-service="Assignment Help">
+          <h3>Assignment Help</h3>
+          <p>Expert guidance on your assignments with clear explanations and resources.</p>
+          <div class="stars" aria-label="Rate Assignment Help">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+        </article>
+        <article class="service-card" data-service="Online Tutoring">
+          <h3>Online Tutoring</h3>
+          <p>One-on-one tutoring sessions tailored to your needs and schedule.</p>
+          <div class="stars" aria-label="Rate Online Tutoring">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+        </article>
+        <article class="service-card" data-service="Exam Preparation">
+          <h3>Exam Preparation</h3>
+          <p>Effective strategies and practice sessions to boost your exam confidence.</p>
+          <div class="stars" aria-label="Rate Exam Preparation">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+        </article>
+        <article class="service-card" data-service="Job Support">
+          <h3>Job Support</h3>
+          <p>Personalized support to help you succeed in your job tasks and workplace challenges.</p>
+          <div class="stars" aria-label="Rate Job Support">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+        </article>
+        <article class="service-card" data-service="Resume Writing">
+          <h3>Resume Writing</h3>
+          <p>Professional resume crafting to highlight your strengths and achievements.</p>
+          <div class="stars" aria-label="Rate Resume Writing">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+        </article>
+        <article class="service-card" data-service="Job Hunting">
+          <h3>Job Hunting</h3>
+          <p>Guidance on searching and applying for the right job opportunities effectively.</p>
+          <div class="stars" aria-label="Rate Job Hunting">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+        </article>
+        <article class="service-card" data-service="Full-Time Job Support">
+          <h3>Full-Time Job Support</h3>
+          <p>Continuous assistance and coaching for your full-time career growth and development.</p>
+          <div class="stars" aria-label="Rate Full-Time Job Support">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>What Students Say</h2>
+      <div class="testimonial-cards" id="testimonial-list">
+        <blockquote>
+          "Dryne Tutoring helped me improve my grades and understand difficult concepts easily."
+          <footer>- Sarah K.</footer>
+        </blockquote>
+        <blockquote>
+          "Professional, patient, and very knowledgeable. Highly recommend for assignment help!"
+          <footer>- James M.</footer>
+        </blockquote>
+        <blockquote>
+          "Thanks to Dryne Tutoring, I passed my exams with confidence and less stress."
+          <footer>- Emily R.</footer>
+        </blockquote>
+        <blockquote>
+          "The personalized approach made all the difference for me."
+          <footer>- Michael B.</footer>
+        </blockquote>
+        <blockquote>
+          "Excellent explanations and always available for questions."
+          <footer>- Aisha N.</footer>
+        </blockquote>
+        <blockquote>
+          "Dryne Tutoring helped me organize my study schedule effectively."
+          <footer>- Daniel K.</footer>
+        </blockquote>
+        <blockquote>
+          "Great value for money and very supportive tutor."
+          <footer>- Natasha P.</footer>
+        </blockquote>
+        <blockquote>
+          "I improved my writing skills thanks to the helpful feedback."
+          <footer>- Leo W.</footer>
+        </blockquote>
+        <blockquote>
+          "Highly recommend Dryne Tutoring for anyone struggling with assignments."
+          <footer>- Fatima S.</footer>
+        </blockquote>
+        <blockquote>
+          "The sessions were engaging and boosted my confidence tremendously."
+          <footer>- Kevin M.</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="submit-testimonial" class="submit-testimonial">
+    <div class="container">
+      <h2>Submit Your Testimonial</h2>
+      <form id="testimonial-form" class="testimonial-form">
+        <label for="tname">Your Name</label>
+        <input type="text" id="tname" name="Name" required />
+
+        <label for="tservice">Service Used</label>
+        <select id="tservice" name="Service" required>
+          <option value="" disabled selected>Select a service</option>
+          <option value="Assignment Help">Assignment Help</option>
+          <option value="Online Tutoring">Online Tutoring</option>
+          <option value="Exam Preparation">Exam Preparation</option>
+          <option value="Job Support">Job Support</option>
+          <option value="Resume Writing">Resume Writing</option>
+          <option value="Job Hunting">Job Hunting</option>
+          <option value="Full-Time Job Support">Full-Time Job Support</option>
+        </select>
+
+        <label for="tmessage">Your Testimonial</label>
+        <textarea id="tmessage" name="Message" rows="4" required></textarea>
+
+        <button type="submit" class="btn-primary">Submit Testimonial</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="booking" class="booking">
+    <div class="container">
+      <h2>Book a Service</h2>
+      <form action="https://formspree.io/f/mjkwnnkw" method="POST" class="booking-form">
+        <input type="hidden" name="_replyto" value="dryne2021@gmail.com" />
+
+        <label for="bname">Name</label>
+        <input type="text" id="bname" name="Name" required />
+
+        <label for="bemail">Email</label>
+        <input type="email" id="bemail" name="Email" required />
+
+        <label for="bphone">Phone</label>
+        <input type="tel" id="bphone" name="Phone" required />
+
+        <label for="bservice">Service</label>
+        <select id="bservice" name="Service" required>
+          <option value="" disabled selected>Select a service</option>
+          <option value="Assignment Help">Assignment Help</option>
+          <option value="Online Tutoring">Online Tutoring</option>
+          <option value="Exam Preparation">Exam Preparation</option>
+          <option value="Job Support">Job Support</option>
+          <option value="Resume Writing">Resume Writing</option>
+          <option value="Job Hunting">Job Hunting</option>
+          <option value="Full-Time Job Support">Full-Time Job Support</option>
+        </select>
+
+        <label for="bdate">Preferred Date</label>
+        <input type="date" id="bdate" name="Preferred Date" required />
+
+        <label for="btime">Preferred Time</label>
+        <input type="time" id="btime" name="Preferred Time" required />
+
+        <label for="bmessage">Additional Message</label>
+        <textarea id="bmessage" name="Message" rows="4"></textarea>
+
+        <button type="submit" class="btn-primary">Submit Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Phone: <a href="https://wa.me/254796341760" target="_blank" rel="noopener noreferrer">+254 796 341 760</a></p>
+      <p>Email: <a href="mailto:dryne2021@gmail.com">dryne2021@gmail.com</a></p>
+      <form action="mailto:dryne2021@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" rows="5" required></textarea>
+
+        <button type="submit" class="btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Dryne Tutoring. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Star ratings code omitted for brevity (same as before)
+
+    // Testimonial submission & display
+    const testimonialForm = document.getElementById('testimonial-form');
+    const testimonialList = document.getElementById('testimonial-list');
+
+    // Load saved testimonials from localStorage on page load
+    function loadTestimonials() {
+      const saved = localStorage.getItem('submittedTestimonials');
+      if (saved) {
+        JSON.parse(saved).forEach(t => {
+          addTestimonialToPage(t.name, t.message);
+        });
+      }
+    }
+
+    // Add testimonial blockquote to page
+    function addTestimonialToPage(name, message) {
+      const block = document.createElement('blockquote');
+      block.innerHTML = `"${escapeHtml(message)}"<footer>- ${escapeHtml(name)}</footer>`;
+      testimonialList.appendChild(block);
+    }
+
+    // Simple HTML escape to prevent injection
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    testimonialForm.addEventListener('submit', e => {
+      e.preventDefault();
+
+      const name = testimonialForm.Name.value.trim();
+      const service = testimonialForm.Service.value; // Not displayed but can be used later
+      const message = testimonialForm.Message.value.trim();
+
+      if (!name || !message) {
+        alert('Please fill in your name and testimonial.');
+        return;
+      }
+
+      addTestimonialToPage(name, message);
+
+      // Save testimonial locally
+      let saved = localStorage.getItem('submittedTestimonials');
+      let testimonials = saved ? JSON.parse(saved) : [];
+      testimonials.push({name, message, service});
+      localStorage.setItem('submittedTestimonials', JSON.stringify(testimonials));
+
+      testimonialForm.reset();
+      alert('Thank you for your testimonial!');
+    });
+
+    // Load testimonials on start
+    window.addEventListener('DOMContentLoaded', loadTestimonials);
+  </script>
+</body>
+</html>
