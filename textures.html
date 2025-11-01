@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Textures Project - WebGL Cube</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #0b0b13;
+        color: #f1f1f1;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #glCanvas {
+        width: 100vw;
+        height: 100vh;
+        display: block;
+      }
+      #overlay {
+        position: fixed;
+        top: 16px;
+        left: 16px;
+        background: rgba(15, 15, 25, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 8px;
+        padding: 12px 16px;
+        max-width: 260px;
+        line-height: 1.5;
+        backdrop-filter: blur(4px);
+      }
+      #overlay h1 {
+        font-size: 1.1rem;
+        margin: 0 0 8px 0;
+      }
+      #overlay ul {
+        padding-left: 20px;
+        margin: 8px 0 0 0;
+      }
+      #overlay li {
+        margin-bottom: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="glCanvas"></canvas>
+    <div id="overlay">
+      <h1>Textures Project</h1>
+      <p>Controls</p>
+      <ul>
+        <li>Arrow keys: orbit camera</li>
+        <li>W/S: zoom in &amp; out</li>
+        <li>Space: reset view</li>
+      </ul>
+      <p>Each cube face uses a unique tile from <code>texture_map.png</code>.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gl-matrix@3.4.3/gl-matrix-min.js"></script>
+    <script src="textures.js"></script>
+  </body>
+</html>
